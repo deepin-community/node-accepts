@@ -1,0 +1,37 @@
+Source: node-accepts
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Yadd <yadd@debian.org>
+Testsuite: autopkgtest-pkg-nodejs
+Build-Depends: debhelper-compat (= 13)
+ , mocha <!nocheck>
+ , node-deep-equal <!nocheck>
+ , node-mime-types <!nocheck>
+ , node-negotiator <!nocheck>
+ , node-should <!nocheck>
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
+Rules-Requires-Root: no
+Homepage: https://github.com/jshttp/accepts
+Vcs-Git: https://salsa.debian.org/js-team/node-accepts.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-accepts
+
+Package: node-accepts
+Architecture: all
+Depends: ${misc:Depends}
+ , node-mime-types (>= 2.1.18)
+ , node-negotiator (>= 0.6.1)
+ , nodejs
+Description: higher-level content negotiation for Node.js
+ Higher level content negotiation based on negotiator.
+ .
+ In addition to negotiator, it allows:
+  - Allows types as an array or arguments list, ie
+    `(['text/html', 'application/json'])`
+    as well as `('text/html', 'application/json')`.
+  - Allows type shorthands such as `json`.
+  - Returns `false` when no types match
+  - Treats non-existent headers as `*`
+ .
+ Node.js is an event-based server-side JavaScript engine.

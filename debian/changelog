@@ -1,0 +1,77 @@
+node-accepts (1.3.7-2) unstable; urgency=medium
+
+  [ lintian-brush ]
+  * Set upstream metadata fields: Bug-Submit.
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since stretch:
+    + Build-Depends: Drop versioned constraint on node-mime-types and
+      node-negotiator.
+
+  [ Yadd ]
+  * Declare compliance with policy 4.6.0
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.6.0
+  * Modernize debian/watch and fix GitHub tags regex
+  * Uploaders: replace Leo Iannacone by myself, thanks for your work!
+
+ -- Yadd <yadd@debian.org>  Thu, 19 Aug 2021 08:58:03 +0200
+
+node-accepts (1.3.7-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Repository, Repository-
+    Browse.
+
+  [ Xavier Guimard ]
+  * Declare compliance with policy 4.5.0
+  * Add debian/gbp.conf
+  * Fix description
+  * Use pkg-js-tools auto test & install
+  * New upstream version 1.3.7
+  * Add build dependency to node-deep-equal
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 18 Feb 2020 16:23:53 +0100
+
+node-accepts (1.3.5-1) unstable; urgency=medium
+
+  * Team upload
+  * Move to salsa
+  * Bump policy and compat
+  * Move to section javascript
+  * Run testsuite in CI
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 31 Oct 2018 14:30:02 +0100
+
+node-accepts (1.1.1-1) unstable; urgency=medium
+
+  * Imported Upstream version 1.1.1
+  * Bump Standard-Version 3.9.6
+  * Update usptream URLs from expressjs to jshttp
+  * debian/control:
+    - add dependency on node-mime-types
+    - builddep on debhelper version 8 instead of 9 - no
+      reason to require 9
+    - builddep on nodejs
+    - move to pkg-javascript
+  * debian/copyright:
+    - add Upstream-Contact
+    - fix upstream copyright year
+    - release debian files under the same upstream
+      license: Expat
+  * debian/rules:
+    - run upstream tests during build
+    - install HISTORY.md as upstream changelog
+  * Add autopkgtest suite
+
+ -- Leo Iannacone <l3on@ubuntu.com>  Sat, 11 Oct 2014 15:10:27 +0200
+
+node-accepts (1.0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #744765)
+
+ -- Leo Iannacone <l3on@ubuntu.com>  Wed, 16 Apr 2014 15:34:52 +0200
